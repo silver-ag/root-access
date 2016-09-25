@@ -1,0 +1,17 @@
+<head>
+<title>VulnServer2</title>
+</head>
+<body bgcolor="black" text="orange">
+<h><u><b>Welcome to our second vulnerable site.</u></b></h><br><br>
+<script>
+function chkPass(pass) {
+  if (pass == "MyP4ss") {
+    window.location.href="bridge.php?pass="+pass;
+  } else {
+    alert('\'fraid not.');
+  }
+}
+</script>
+<input type="text" id="pass">
+<button onclick="javascript:chkPass(document.getElementById('pass').value);">login</button>
+</body>

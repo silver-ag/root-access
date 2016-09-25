@@ -1,0 +1,4 @@
+AuthName "admin section"
+AuthType Basic
+AuthUserFile /vulnserver2/admin_stuff/.htpasswd
+Require valid-user

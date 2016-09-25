@@ -1,0 +1,16 @@
+<head>
+<title>javascript issues</title>
+</head>
+<body bgcolor="black" text="green">
+<h>This one is easy.</h>
+<input type="password" id="pass">
+<button onclick="javascript:check(document.getElementById('pass').value)">Submit</button>
+<script>
+function check(pass) {
+    if (pass=="letmein") {
+       alert("remember kids - never authenticate with javascript!");
+       window.location.href = "pag3.html";
+    }
+}
+</script>
+</body>
